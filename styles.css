@@ -298,21 +298,6 @@ body {
     gap: 32px;
     
 }
-.card {
-    position: relative;
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    background: transparent;
-    border-radius: 32px;
-    border: transparent;
-    box-shadow: 0 20px 40px -10px rgba(var(--bg-color)); /* Adjusted box shadow */
-    transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow; /* Added box-shadow transition */
-}
-
-.card:hover {
-    transform: translate3d(0px, 0px, -250px);
-}
 .Competencias-container .Competencias-box{
     width: 500px;
     height: 300px;
@@ -320,73 +305,27 @@ body {
     padding: 48px 32px 64px;
     border-radius: 32px;
     text-align: center;
-    border: transparent;
+    border: 3px solid var(--bg-color);
     transition: .5s ease;
     color: #0ef;
-}
-.Competencias-box{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-.Competencias-container .card:hover .Competencias-box {
-    transform: rotateY(180deg);
-}
-.Competencias-container .card:hover .card-back i {
-    transform: perspective(3000px) rotateY(5deg);
-}
-.Competencias-container .card:hover .card-back {
-    filter: none; /* Remover o efeito de ofuscação */
+    
+    
 }
 .Competencias-container .Competencias-box h3{
-    color: var(--bg-color);
+    color: var(--text-color);
 }
 .Competencias-container .Competencias-box:hover{
-    border-color: transparent;
+    border-color: var(--main-color);
     transform: scale(1.02);
+}
+
+.Competencias-box i{
+    font-size: 112px;
+    align-items: center;
+    cursor: pointer;
 }
 .Competencias-box h3{
     font-size: 40px;
-}
-.card-front, 
-.card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 32px;
-    border: transparent;
-}
-.card-front {
-    background: linear-gradient(to right, #1abc9c, #3498db);
-}
-.card-front i{
-    width: 200px;
-    margin-top: 18px;
-    color: #1f242d;
-}
-.card-back {
-    background: linear-gradient(to right, #1abc9c, #3498db);
-    color: #ffffff;
-    box-shadow: 0 5px 20px #3498db;
-    transform: rotateY(180deg);
-}
-.card-back i{
-    width: 140px;
-    margin-top: 1rem;
-    transform: perspective(3000px) rotateY(5deg);
-}
-.card-back h1 {
-    font-size: 2rem;
-    display: flex;
-    margin: 0;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
 
