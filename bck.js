@@ -28,7 +28,7 @@ window.onscroll = () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
     // remover icones
-    menuIcon.classList.remove('bx-x')
+    menuIcon.classList.remove('bx-xx')
     navbar.classList.remove('active')
 
 };
@@ -88,9 +88,3 @@ enviarBtn.addEventListener('click', function () {
     // Redirecionar para o WhatsApp
     window.location.href = linkWhatsApp;
 });
-
-
-
-
-
-
