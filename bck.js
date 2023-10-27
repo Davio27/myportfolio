@@ -89,6 +89,29 @@ enviarBtn.addEventListener('click', function () {
     window.location.href = linkWhatsApp;
 });
 
+//Resolvendo bug do Safari
+function rotateCard(card) {
+    // Obtenha a caixa que contém o conteúdo do cartão
+    const box = card.querySelector(".Competencias-box");
+  
+    // Obtenha a direção atual da rotação
+    const rotation = box.style.transform.split("(")[1].split(")")[0];
+  
+    // Se o cartão estiver virado para a frente, gire-o para trás
+    if (rotation === "0deg") {
+      box.style.transform = "rotateY(180deg)";
+    } else {
+      // Se o cartão estiver virado para trás, gire-o para frente
+      box.style.transform = "rotateY(0deg)";
+    }
+  }
+  
+  // Adicione um ouvinte de clique a cada cartão
+  
+  document.querySelectorAll(".card").forEach(card => {
+    card.addEventListener("click", rotateCard);
+  });
+
 
 
 
