@@ -23,10 +23,9 @@ Bem-vindo ao meu repositório do Portfólio Pessoal! Aqui você encontrará o c�
 
 ## Como Usar:
 
-1. Clone ou baixe este repositório.
-2. Abra o arquivo `index.html` em seu navegador para explorar o portfólio.
-3. Navegue pelas diferentes seções para conhecer mais sobre minha jornada, habilidades e projetos.
-4. Use os links de contato para se conectar ou enviar uma mensagem diretamente.
+1. Abra o arquivo `index.html` em seu navegador para explorar o portfólio.
+2. Navegue pelas diferentes seções para conhecer mais sobre minha jornada, habilidades e projetos.
+3. Use os links de contato para se conectar ou enviar uma mensagem diretamente.
 
 Este portfólio é uma representação visual e funcional das minhas habilidades e experiências em TI. Fique à vontade para explorar e entrar em contato para oportunidades de colaboração ou mais informações.
 
