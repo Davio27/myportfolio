@@ -73,10 +73,10 @@ const enviarBtn = document.getElementById('enviarBtn');
 // Adicionar um evento de clique ao botão
 enviarBtn.addEventListener('click', function () {
     // Obter os valores dos campos do formulário
-    const nome = document.querySelector('input[placeholder="Nome Completo"]').value;
-    const email = document.querySelector('input[placeholder="Endereço de E-mail"]').value;
-    const numero = document.querySelector('input[placeholder="Numero de Telefone"]').value;
-    const assunto = document.querySelector('input[placeholder="Assunto do E-mail"]').value;
+    const nome = document.querySelector('input[placeholder="Nome"]').value;
+    const email = document.querySelector('input[placeholder="E-mail"]').value;
+    const numero = document.querySelector('input[placeholder="Telefone"]').value;
+    const assunto = document.querySelector('input[placeholder="Assunto"]').value;
     const mensagem = document.querySelector('textarea').value;
 
     // Formatar a mensagem para o link do WhatsApp
