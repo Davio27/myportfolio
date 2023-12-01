@@ -201,6 +201,18 @@ body {
     width: 100%;
     display: flex;
 }
+.social-media .insta{
+    background: linear-gradient(to bottom, #8a3ab9, #f7b928);
+}
+.social-media .link{
+    background: linear-gradient(to bottom, #0077B5, #00405C);
+}
+.social-media .whats{
+    background: linear-gradient(to bottom, #25d366, #128c7e);
+}
+.social-media .git{
+    background: linear-gradient(to right, #333, #040404);
+}
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -208,7 +220,7 @@ body {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: none;
     border-radius: 50%;
     font-size: 20px;
     color: #0ef;
@@ -220,7 +232,7 @@ body {
  /* clarear ao passar o cursor em cima */
 .social-media a:hover{
     background: #0ef;
-    color: #1f242d;
+    color: #040404;
     box-shadow: 0 0 20px #0ef;
 }
 
@@ -228,7 +240,7 @@ body {
 .btn {
     display: inline-block;
     padding: 12px 28px;
-    background: #0ef;
+    background: linear-gradient(to right, #f0f3fa, #D5DEEF, #B1C9FE, #8AAEE0, #638ecb, #395886);
     border-radius: 25px;
     box-shadow: 0 0 15px #0ef;
     font-size: 16px;
