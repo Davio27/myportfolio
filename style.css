@@ -223,7 +223,7 @@ body {
     border: none;
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: var(--text-color);
     text-decoration: none;
     margin: 30px 15px 30px 0;
     animation: sliderLeft 1s ease forwards;;
