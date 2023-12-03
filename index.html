@@ -495,8 +495,9 @@
                     <input type="text" placeholder="Assunto">
                 </div>
                 <textarea cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
-                <input type="button" value="Enviar Mensagem" class="btn1" id="enviarBtn">
+                <button type="button" class="btn1" onclick="enviarEmail()">Enviar Mensagem</button>
             </form>
+            <div class="error" id="mensagemErro" style="display: none;"><button id="fecharDiv" class='bx bxs-x-circle' style='color:#f90808'></button><i class='bx bxs-error-alt' style='color:#ea0909'  ></i>Por favor, preencha todos os campos.</div>
         </section>
 
         <!-- rodapé -->
