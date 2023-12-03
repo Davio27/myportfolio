@@ -68,26 +68,44 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Selecionar o botão de envio
-const enviarBtn = document.getElementById('enviarBtn');
+// Script para enviar o conteudo de contato por e-mail
+function enviarEmail() {
+    // Capturar os valores dos campos
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var fone = document.getElementById('fone').value;
+    var assunto = document.getElementById('assunto').value;
+    var mensagem = document.getElementById('mensagem').value;
 
-// Adicionar um evento de clique ao botão
-enviarBtn.addEventListener('click', function () {
-    // Obter os valores dos campos do formulário
-    const nome = document.querySelector('input[placeholder="Nome"]').value;
-    const email = document.querySelector('input[placeholder="E-mail"]').value;
-    const numero = document.querySelector('input[placeholder="Telefone"]').value;
-    const assunto = document.querySelector('input[placeholder="Assunto"]').value;
-    const mensagem = document.querySelector('textarea').value;
+    // Verificar se todos os campos estão preenchidos
+    if (nome === "" || email === "" || fone === "" || assunto === "" || mensagem === "") {
+        document.getElementById('mensagemErro').style.display = 'flex';
+        setTimeout(() => {
+        document.getElementById('mensagemErro').style.animation = 'none';}, 3000);
+        return;
+    } 
+    else {
+        document.getElementById('mensagemErro').style.display = 'none';
+    }
 
-    // Formatar a mensagem para o link do WhatsApp
-    const mensagemFormatada = `Olá! Meu nome é ${nome}, meu email é ${email}, meu telefone é ${numero}, e meu assunto é ${assunto}. Minha mensagem é: ${mensagem}`;
+    // Montar o link de e-mail com os dados preenchidos
+    var linkEmail = "mailto:daviccarvalho11@hotmail.com" +
+                    "?subject=" + encodeURIComponent(assunto) +
+                    "&body=" + encodeURIComponent("Nome: " + nome + "\nE-mail: " + email + "\nTelefone: " + fone + "\n\n" + mensagem);
 
-    // Criar o link do WhatsApp com a mensagem formatada
-    const linkWhatsApp = `https://api.whatsapp.com/send?phone=+5519989078235&text=${encodeURIComponent(mensagemFormatada)}`;
+    // Abrir o cliente de e-mail padrão do usuário
+    window.location.href = linkEmail;
+}
 
-    // Redirecionar para o WhatsApp
-    window.location.href = linkWhatsApp;
-});
+document.addEventListener("DOMContentLoaded", function () {
+    const errorBox = document.getElementById("mensagemErro");
+    const closeButton = document.getElementById("fecharDiv");
+
+    // Adiciona o evento de clique no botão para fechar a div error
+    closeButton.addEventListener("click", function () {
+        errorBox.style.display = "none";
+    });
+    });
 
 //Resolvendo bug do Safari
 function rotateCard(card) {
