@@ -37,7 +37,7 @@ window.onscroll = () => {
 
 
 var typed = new Typed(".multiple-texto", {
-    strings: ["Ciência de Dados", "Segurança da Informação"],
+    strings: ["Desenvolvimento Web", "Front-end React/Node", "DataScience"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
