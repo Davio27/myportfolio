@@ -37,7 +37,7 @@ window.onscroll = () => {
 
 
 var typed = new Typed(".multiple-texto", {
-    strings: ["Desenvolvedor Web", "Tech Support", "Desenvolvedor FullStack", "Desenvolvedor React.JS", "Desenvolvedor React Native"],
+    strings: ["Desenvolvemento Web", "Suporte Tecnico", "Frontend", "React.JS", "backend"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
